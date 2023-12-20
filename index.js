@@ -6,7 +6,7 @@ const port = 5000;
 mongodb().then(async () => {
     await app.use(cors(
         {
-            origin: ['http://localhost:3000','http://localhost:5000']
+            origin: '*'
         }
 
     ));
